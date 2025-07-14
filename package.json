@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "template:clean": "rm -rf .git && npm install",
+    "template:setup": "npm run template:clean && git init && git add . && git commit -m 'Initial commit from template'"
   },
   "dependencies": {
     "@radix-ui/react-alert-dialog": "^1.1.14",
